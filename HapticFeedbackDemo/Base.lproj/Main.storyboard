@@ -118,13 +118,6 @@
                                     <segue destination="SyS-05-GEy" kind="show" id="gEA-rV-yD1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-gt-wzM">
-                                <rect key="frame" x="117" y="373" width="141" height="30"/>
-                                <state key="normal" title="iPhone 6s / iPhone 7"/>
-                                <connections>
-                                    <segue destination="8iG-le-82e" kind="show" id="bta-zG-La0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For iPhone 7/ 7 Plus and iPhone 6s / 6s Plus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-om-zG9">
                                 <rect key="frame" x="15" y="125.5" width="345" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -144,7 +137,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpN-1q-s9E">
-                                <rect key="frame" x="51" y="423" width="272" height="30"/>
+                                <rect key="frame" x="51" y="368" width="272" height="30"/>
                                 <state key="normal" title="iPhone 7 Feedback Styles for iPhone 6s"/>
                                 <connections>
                                     <segue destination="g5e-bC-Lr5" kind="show" id="MKh-bV-1HY"/>
@@ -157,12 +150,10 @@
                             <constraint firstAttribute="trailing" secondItem="pRA-nq-Gl2" secondAttribute="trailing" id="526-8i-ay9"/>
                             <constraint firstItem="0s1-kk-pEo" firstAttribute="top" secondItem="PCk-C2-MEQ" secondAttribute="bottom" constant="25" id="ATy-Qq-1XZ"/>
                             <constraint firstItem="pRA-nq-Gl2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Djh-X8-Eiw"/>
-                            <constraint firstItem="hh8-gt-wzM" firstAttribute="top" secondItem="0s1-kk-pEo" secondAttribute="bottom" constant="25" id="FGX-tu-c7x"/>
+                            <constraint firstItem="rpN-1q-s9E" firstAttribute="top" secondItem="0s1-kk-pEo" secondAttribute="bottom" constant="20" id="PQ4-qO-fDU"/>
                             <constraint firstItem="0s1-kk-pEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="Q0Y-14-7Pf"/>
                             <constraint firstAttribute="trailing" secondItem="qCt-om-zG9" secondAttribute="trailing" constant="15" id="SXV-B2-Rvz"/>
-                            <constraint firstItem="rpN-1q-s9E" firstAttribute="top" secondItem="hh8-gt-wzM" secondAttribute="bottom" constant="20" id="Ttd-KG-sqO"/>
                             <constraint firstItem="ySR-Nc-bT7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V0a-dr-0Jo"/>
-                            <constraint firstItem="hh8-gt-wzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfw-3Y-vKx"/>
                             <constraint firstItem="PCk-C2-MEQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-55.5" id="e7p-PL-JjX"/>
                             <constraint firstItem="PCk-C2-MEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTf-4N-UEu"/>
                             <constraint firstItem="ySR-Nc-bT7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pO4-wS-SYA"/>
@@ -247,82 +238,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpb-38-I6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2012" y="467.3163418290855"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gx5-jd-MzH">
-            <objects>
-                <viewController id="8iG-le-82e" customClass="iViewController" customModule="HapticFeedbackDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qA2-Yx-vSF"/>
-                        <viewControllerLayoutGuide type="bottom" id="67A-d7-MGr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TCv-eh-bzD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gm-jD-433">
-                                <rect key="frame" x="15" y="126" width="345" height="53"/>
-                                <string key="text">This is a combination of methods used for both generations of the iPhone. This is my suggestion of providing mostly the same type of haptic feedback to the users regardless of the device they are using.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 6s / 6s Plus / 7 / 7 Plus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw7-Ry-NOK">
-                                <rect key="frame" x="0.0" y="84" width="375" height="27"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snm-dG-xPW">
-                                <rect key="frame" x="170.5" y="268.5" width="35" height="30"/>
-                                <state key="normal" title="Light"/>
-                                <connections>
-                                    <action selector="light:" destination="8iG-le-82e" eventType="touchUpInside" id="4YK-sm-HMU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aay-QL-9kh">
-                                <rect key="frame" x="170.5" y="368.5" width="34" height="30"/>
-                                <state key="normal" title="Error"/>
-                                <connections>
-                                    <action selector="error:" destination="8iG-le-82e" eventType="touchUpInside" id="fN8-Yh-DDQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hta-9o-MpR">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Strong"/>
-                                <connections>
-                                    <action selector="strong:" destination="8iG-le-82e" eventType="touchUpInside" id="JQj-bQ-QPg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Mažvydas Bartašius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPl-SO-sDS">
-                                <rect key="frame" x="122.5" y="632.5" width="130" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92692041400000003" green="0.94032096860000003" blue="0.94645720720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2gm-jD-433" secondAttribute="trailing" constant="15" id="3ix-ua-kSg"/>
-                            <constraint firstItem="zPl-SO-sDS" firstAttribute="centerX" secondItem="TCv-eh-bzD" secondAttribute="centerX" id="4e7-vu-t0i"/>
-                            <constraint firstItem="2gm-jD-433" firstAttribute="top" secondItem="Aw7-Ry-NOK" secondAttribute="bottom" constant="15" id="9tt-V4-wL7"/>
-                            <constraint firstItem="Hta-9o-MpR" firstAttribute="centerY" secondItem="TCv-eh-bzD" secondAttribute="centerY" id="AyM-kU-7vf"/>
-                            <constraint firstItem="aay-QL-9kh" firstAttribute="top" secondItem="Hta-9o-MpR" secondAttribute="bottom" constant="20" id="BH2-CP-78D"/>
-                            <constraint firstItem="2gm-jD-433" firstAttribute="leading" secondItem="TCv-eh-bzD" secondAttribute="leading" constant="15" id="CZv-bf-eKB"/>
-                            <constraint firstItem="Aw7-Ry-NOK" firstAttribute="leading" secondItem="TCv-eh-bzD" secondAttribute="leading" id="GZ5-Hg-gRw"/>
-                            <constraint firstItem="aay-QL-9kh" firstAttribute="centerX" secondItem="TCv-eh-bzD" secondAttribute="centerX" id="Kqm-KY-BFo"/>
-                            <constraint firstAttribute="trailing" secondItem="Aw7-Ry-NOK" secondAttribute="trailing" id="MVs-fh-fPI"/>
-                            <constraint firstItem="Hta-9o-MpR" firstAttribute="centerX" secondItem="TCv-eh-bzD" secondAttribute="centerX" id="NVu-2j-kFd"/>
-                            <constraint firstItem="67A-d7-MGr" firstAttribute="top" secondItem="zPl-SO-sDS" secondAttribute="bottom" constant="20" id="NhF-E7-kM0"/>
-                            <constraint firstItem="Hta-9o-MpR" firstAttribute="top" secondItem="Snm-dG-xPW" secondAttribute="bottom" constant="20" id="PMk-Ku-Y0n"/>
-                            <constraint firstItem="Snm-dG-xPW" firstAttribute="centerX" secondItem="TCv-eh-bzD" secondAttribute="centerX" id="x5n-g0-aYa"/>
-                            <constraint firstItem="Aw7-Ry-NOK" firstAttribute="top" secondItem="qA2-Yx-vSF" secondAttribute="bottom" constant="20" id="yLV-rC-tHF"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tvh-Uo-fSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1076" y="865.81709145427294"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HhT-8k-okJ">

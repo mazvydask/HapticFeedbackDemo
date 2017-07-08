@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84569C9D603649A6D09FE369 /* Pods_HapticFeedbackDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C81905F9C38089C864F8B08 /* Pods_HapticFeedbackDemo.framework */; };
 		F5658D5D1F112E1500A8104F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5658D5C1F112E1500A8104F /* AppDelegate.swift */; };
 		F5658D621F112E1500A8104F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5658D601F112E1500A8104F /* Main.storyboard */; };
 		F5658D641F112E1500A8104F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5658D631F112E1500A8104F /* Assets.xcassets */; };
 		F5658D671F112E1500A8104F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5658D651F112E1500A8104F /* LaunchScreen.storyboard */; };
 		F5658D711F117EF300A8104F /* i7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5658D701F117EF300A8104F /* i7ViewController.swift */; };
 		F5658D751F117F1B00A8104F /* i6sViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5658D741F117F1B00A8104F /* i6sViewController.swift */; };
-		F5658D771F117F2E00A8104F /* iViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5658D761F117F2E00A8104F /* iViewController.swift */; };
 		F5D9EBBE1F11934400040010 /* MockFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D9EBBD1F11934400040010 /* MockFeedbackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EF6CFEBA6DAC029E5631221 /* Pods-HapticFeedbackDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticFeedbackDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HapticFeedbackDemo/Pods-HapticFeedbackDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8C81905F9C38089C864F8B08 /* Pods_HapticFeedbackDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticFeedbackDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF944BCD5412043E92910D94 /* Pods-HapticFeedbackDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticFeedbackDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HapticFeedbackDemo/Pods-HapticFeedbackDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F5658D591F112E1500A8104F /* HapticFeedbackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticFeedbackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5658D5C1F112E1500A8104F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5658D611F112E1500A8104F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,7 +25,6 @@
 		F5658D681F112E1500A8104F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5658D701F117EF300A8104F /* i7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = i7ViewController.swift; sourceTree = "<group>"; };
 		F5658D741F117F1B00A8104F /* i6sViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = i6sViewController.swift; sourceTree = "<group>"; };
-		F5658D761F117F2E00A8104F /* iViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iViewController.swift; sourceTree = "<group>"; };
 		F5D9EBBD1F11934400040010 /* MockFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFeedbackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,37 +33,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84569C9D603649A6D09FE369 /* Pods_HapticFeedbackDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4108EA236CF88900EE4BE8B4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C81905F9C38089C864F8B08 /* Pods_HapticFeedbackDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5DB37E7635EB62B120DC5569 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DF944BCD5412043E92910D94 /* Pods-HapticFeedbackDemo.debug.xcconfig */,
-				0EF6CFEBA6DAC029E5631221 /* Pods-HapticFeedbackDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		F5658D501F112E1500A8104F = {
 			isa = PBXGroup;
 			children = (
 				F5658D5B1F112E1500A8104F /* HapticFeedbackDemo */,
 				F5658D5A1F112E1500A8104F /* Products */,
-				5DB37E7635EB62B120DC5569 /* Pods */,
-				4108EA236CF88900EE4BE8B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +61,6 @@
 				F5658D5C1F112E1500A8104F /* AppDelegate.swift */,
 				F5658D701F117EF300A8104F /* i7ViewController.swift */,
 				F5658D741F117F1B00A8104F /* i6sViewController.swift */,
-				F5658D761F117F2E00A8104F /* iViewController.swift */,
 				F5D9EBBD1F11934400040010 /* MockFeedbackViewController.swift */,
 				F5658D601F112E1500A8104F /* Main.storyboard */,
 				F5658D631F112E1500A8104F /* Assets.xcassets */,
@@ -104,12 +77,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5658D6B1F112E1500A8104F /* Build configuration list for PBXNativeTarget "HapticFeedbackDemo" */;
 			buildPhases = (
-				473561F8A717881320CA7CAC /* [CP] Check Pods Manifest.lock */,
 				F5658D551F112E1500A8104F /* Sources */,
 				F5658D561F112E1500A8104F /* Frameworks */,
 				F5658D571F112E1500A8104F /* Resources */,
-				0699ED73DB2219DBD24C002A /* [CP] Embed Pods Frameworks */,
-				995C19AC5B868627C63EF4AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,54 +138,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0699ED73DB2219DBD24C002A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HapticFeedbackDemo/Pods-HapticFeedbackDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		473561F8A717881320CA7CAC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		995C19AC5B868627C63EF4AE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HapticFeedbackDemo/Pods-HapticFeedbackDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F5658D551F112E1500A8104F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,7 +146,6 @@
 				F5658D711F117EF300A8104F /* i7ViewController.swift in Sources */,
 				F5658D5D1F112E1500A8104F /* AppDelegate.swift in Sources */,
 				F5658D751F117F1B00A8104F /* i6sViewController.swift in Sources */,
-				F5658D771F117F2E00A8104F /* iViewController.swift in Sources */,
 				F5D9EBBE1F11934400040010 /* MockFeedbackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +267,6 @@
 		};
 		F5658D6C1F112E1500A8104F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF944BCD5412043E92910D94 /* Pods-HapticFeedbackDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EPML3SR9WM;
@@ -360,7 +280,6 @@
 		};
 		F5658D6D1F112E1500A8104F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EF6CFEBA6DAC029E5631221 /* Pods-HapticFeedbackDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EPML3SR9WM;
