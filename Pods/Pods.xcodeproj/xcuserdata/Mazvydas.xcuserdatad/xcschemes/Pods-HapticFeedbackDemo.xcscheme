@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5658D581F112E1500A8104F"
-               BuildableName = "HapticFeedbackDemo.app"
-               BlueprintName = "HapticFeedbackDemo"
-               ReferencedContainer = "container:HapticFeedbackDemo.xcodeproj">
+               BlueprintIdentifier = "B9B8C20299D6A70487C91C67843D381D"
+               BuildableName = "Pods_HapticFeedbackDemo.framework"
+               BlueprintName = "Pods-HapticFeedbackDemo"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5658D581F112E1500A8104F"
-            BuildableName = "HapticFeedbackDemo.app"
-            BlueprintName = "HapticFeedbackDemo"
-            ReferencedContainer = "container:HapticFeedbackDemo.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5658D581F112E1500A8104F"
-            BuildableName = "HapticFeedbackDemo.app"
-            BlueprintName = "HapticFeedbackDemo"
-            ReferencedContainer = "container:HapticFeedbackDemo.xcodeproj">
+            BlueprintIdentifier = "B9B8C20299D6A70487C91C67843D381D"
+            BuildableName = "Pods_HapticFeedbackDemo.framework"
+            BlueprintName = "Pods-HapticFeedbackDemo"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5658D581F112E1500A8104F"
-            BuildableName = "HapticFeedbackDemo.app"
-            BlueprintName = "HapticFeedbackDemo"
-            ReferencedContainer = "container:HapticFeedbackDemo.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
