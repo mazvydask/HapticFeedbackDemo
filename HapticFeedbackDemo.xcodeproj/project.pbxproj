@@ -13,7 +13,6 @@
 		F5658D671F112E1500A8104F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5658D651F112E1500A8104F /* LaunchScreen.storyboard */; };
 		F5658D711F117EF300A8104F /* i7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5658D701F117EF300A8104F /* i7ViewController.swift */; };
 		F5658D751F117F1B00A8104F /* i6sViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5658D741F117F1B00A8104F /* i6sViewController.swift */; };
-		F5D9EBBE1F11934400040010 /* MockFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D9EBBD1F11934400040010 /* MockFeedbackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		F5658D681F112E1500A8104F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5658D701F117EF300A8104F /* i7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = i7ViewController.swift; sourceTree = "<group>"; };
 		F5658D741F117F1B00A8104F /* i6sViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = i6sViewController.swift; sourceTree = "<group>"; };
-		F5D9EBBD1F11934400040010 /* MockFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFeedbackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				F5658D5C1F112E1500A8104F /* AppDelegate.swift */,
 				F5658D701F117EF300A8104F /* i7ViewController.swift */,
 				F5658D741F117F1B00A8104F /* i6sViewController.swift */,
-				F5D9EBBD1F11934400040010 /* MockFeedbackViewController.swift */,
 				F5658D601F112E1500A8104F /* Main.storyboard */,
 				F5658D631F112E1500A8104F /* Assets.xcassets */,
 				F5658D651F112E1500A8104F /* LaunchScreen.storyboard */,
@@ -146,7 +143,6 @@
 				F5658D711F117EF300A8104F /* i7ViewController.swift in Sources */,
 				F5658D5D1F112E1500A8104F /* AppDelegate.swift in Sources */,
 				F5658D751F117F1B00A8104F /* i6sViewController.swift in Sources */,
-				F5D9EBBE1F11934400040010 /* MockFeedbackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUU-Az-WRu">
                                 <rect key="frame" x="15" y="126" width="345" height="53"/>
-                                <string key="text">These are 3 different types of haptic feedback available through AudioToolbox. Full disclaimer, the documentation on this is kind of vague, as this wasn't meant to be used the same way as UIFeedbackGenerator on iOS 10 and iPhone 7 / 7 Plus.</string>
+                                <string key="text">These are 3 different types of haptic feedback available through AudioToolbox. Full disclaimer, the documentation on this is kind of vague. So there is a chance that Apple could decide not to allow such usage in the future.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,14 +35,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfi-5Z-kjj">
-                                <rect key="frame" x="170" y="268" width="34" height="30"/>
+                                <rect key="frame" x="170" y="242.5" width="34" height="30"/>
                                 <state key="normal" title="Peek"/>
                                 <connections>
                                     <action selector="peek:" destination="SyS-05-GEy" eventType="touchUpInside" id="zju-kN-bXA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x61-zH-0oa">
-                                <rect key="frame" x="170.5" y="368" width="34" height="30"/>
+                                <rect key="frame" x="170.5" y="318.5" width="34" height="30"/>
                                 <state key="normal" title="Error"/>
                                 <connections>
                                     <action selector="error:" destination="SyS-05-GEy" eventType="touchUpInside" id="SGk-8v-oX2"/>
@@ -55,35 +55,79 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LD0-Uk-GaJ">
-                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <rect key="frame" x="172" y="280.5" width="30" height="30"/>
                                 <state key="normal" title="Pop"/>
                                 <connections>
                                     <action selector="pop:" destination="SyS-05-GEy" eventType="touchUpInside" id="5m3-na-d7b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjY-sd-CxR">
+                                <rect key="frame" x="162" y="356.5" width="50" height="30"/>
+                                <state key="normal" title="Vibrate"/>
+                                <connections>
+                                    <action selector="vibrate:" destination="SyS-05-GEy" eventType="touchUpInside" id="Obl-pf-PIW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="682-fm-fuq">
+                                <rect key="frame" x="150.5" y="447.5" width="74" height="30"/>
+                                <state key="normal" title="Custom #1"/>
+                                <connections>
+                                    <action selector="successButton:" destination="SyS-05-GEy" eventType="touchUpInside" id="yaQ-cy-erL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyc-uh-XDJ">
+                                <rect key="frame" x="149.5" y="487.5" width="76" height="30"/>
+                                <state key="normal" title="Custom #2"/>
+                                <connections>
+                                    <action selector="crazyButton:" destination="SyS-05-GEy" eventType="touchUpInside" id="hlG-sQ-V5B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIT-gh-dmj">
+                                <rect key="frame" x="149" y="527.5" width="76" height="30"/>
+                                <state key="normal" title="Custom #3"/>
+                                <connections>
+                                    <action selector="superCrazyButton:" destination="SyS-05-GEy" eventType="touchUpInside" id="zru-Lo-wiw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Haptic Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9V-BY-tvg">
+                                <rect key="frame" x="111" y="416.5" width="153" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92692041400000003" green="0.94032096860000003" blue="0.94645720720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pjY-sd-CxR" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="7LS-8L-nJP"/>
+                            <constraint firstItem="wyc-uh-XDJ" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="7ch-SH-lHj"/>
+                            <constraint firstItem="682-fm-fuq" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="7gZ-3x-dBR"/>
                             <constraint firstItem="dfi-5Z-kjj" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="7nl-5Y-pxT"/>
                             <constraint firstItem="f2k-jq-Gms" firstAttribute="top" secondItem="kCN-5X-G1g" secondAttribute="bottom" constant="20" id="D0a-9d-KWq"/>
                             <constraint firstAttribute="trailing" secondItem="rUU-Az-WRu" secondAttribute="trailing" constant="15" id="F5K-79-df3"/>
+                            <constraint firstItem="lIT-gh-dmj" firstAttribute="top" secondItem="wyc-uh-XDJ" secondAttribute="bottom" constant="10" id="Kvi-sL-evc"/>
                             <constraint firstItem="LD0-Uk-GaJ" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="Odu-wy-Ie6"/>
                             <constraint firstItem="kCN-5X-G1g" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="OpU-0r-WuA"/>
-                            <constraint firstItem="x61-zH-0oa" firstAttribute="top" secondItem="LD0-Uk-GaJ" secondAttribute="bottom" constant="20" id="TPY-FW-Y8b"/>
+                            <constraint firstItem="wyc-uh-XDJ" firstAttribute="top" secondItem="682-fm-fuq" secondAttribute="bottom" constant="10" id="Rra-F0-4hr"/>
+                            <constraint firstItem="x61-zH-0oa" firstAttribute="top" secondItem="LD0-Uk-GaJ" secondAttribute="bottom" constant="8" id="TPY-FW-Y8b"/>
                             <constraint firstItem="v96-RK-0et" firstAttribute="top" secondItem="KDH-YG-7C1" secondAttribute="bottom" constant="20" id="WoH-fM-r1v"/>
+                            <constraint firstItem="L9V-BY-tvg" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="a0N-oh-sai"/>
                             <constraint firstItem="rUU-Az-WRu" firstAttribute="leading" secondItem="wlh-rI-aHs" secondAttribute="leading" constant="15" id="dk7-31-6gL"/>
+                            <constraint firstItem="lIT-gh-dmj" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="epk-VV-GdO"/>
+                            <constraint firstItem="L9V-BY-tvg" firstAttribute="top" secondItem="pjY-sd-CxR" secondAttribute="bottom" constant="30" id="g1i-s6-PIn"/>
+                            <constraint firstItem="682-fm-fuq" firstAttribute="top" secondItem="L9V-BY-tvg" secondAttribute="bottom" constant="15" id="gut-fG-0TG"/>
+                            <constraint firstItem="pjY-sd-CxR" firstAttribute="top" secondItem="x61-zH-0oa" secondAttribute="bottom" constant="8" id="jRZ-tM-QTM"/>
                             <constraint firstItem="x61-zH-0oa" firstAttribute="centerX" secondItem="wlh-rI-aHs" secondAttribute="centerX" id="kZj-ge-pZ9"/>
+                            <constraint firstItem="x61-zH-0oa" firstAttribute="centerY" secondItem="wlh-rI-aHs" secondAttribute="centerY" id="nYk-67-9V8"/>
                             <constraint firstItem="rUU-Az-WRu" firstAttribute="top" secondItem="v96-RK-0et" secondAttribute="bottom" constant="15" id="px3-Oe-Yx2"/>
-                            <constraint firstItem="LD0-Uk-GaJ" firstAttribute="centerY" secondItem="wlh-rI-aHs" secondAttribute="centerY" id="qTb-60-dfn"/>
                             <constraint firstAttribute="trailing" secondItem="v96-RK-0et" secondAttribute="trailing" id="sj3-Hc-97k"/>
-                            <constraint firstItem="LD0-Uk-GaJ" firstAttribute="top" secondItem="dfi-5Z-kjj" secondAttribute="bottom" constant="20" id="u4f-6L-gUF"/>
+                            <constraint firstItem="LD0-Uk-GaJ" firstAttribute="top" secondItem="dfi-5Z-kjj" secondAttribute="bottom" constant="8" id="u4f-6L-gUF"/>
                             <constraint firstItem="v96-RK-0et" firstAttribute="leading" secondItem="wlh-rI-aHs" secondAttribute="leading" id="yWA-1c-X2E"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7M-yG-x14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-578.86056971514245"/>
+            <point key="canvasLocation" x="2009" y="425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -104,20 +148,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCk-C2-MEQ">
-                                <rect key="frame" x="157.5" y="263" width="60" height="30"/>
-                                <state key="normal" title="iPhone 7"/>
-                                <connections>
-                                    <segue destination="CrU-Ba-WRj" kind="show" id="GUX-mH-W89"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s1-kk-pEo">
-                                <rect key="frame" x="154.5" y="318" width="68" height="30"/>
-                                <state key="normal" title="iPhone 6s"/>
-                                <connections>
-                                    <segue destination="SyS-05-GEy" kind="show" id="gEA-rV-yD1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For iPhone 7/ 7 Plus and iPhone 6s / 6s Plus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-om-zG9">
                                 <rect key="frame" x="15" y="125.5" width="345" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -136,11 +166,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpN-1q-s9E">
-                                <rect key="frame" x="51" y="368" width="272" height="30"/>
-                                <state key="normal" title="iPhone 7 Feedback Styles for iPhone 6s"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCk-C2-MEQ">
+                                <rect key="frame" x="129" y="291" width="114" height="30"/>
+                                <state key="normal" title="iPhone 7 / 7 Plus"/>
                                 <connections>
-                                    <segue destination="g5e-bC-Lr5" kind="show" id="MKh-bV-1HY"/>
+                                    <segue destination="CrU-Ba-WRj" kind="show" id="GUX-mH-W89"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s1-kk-pEo">
+                                <rect key="frame" x="121.5" y="346" width="131" height="30"/>
+                                <state key="normal" title="iPhone 6s / 6s Plus"/>
+                                <connections>
+                                    <segue destination="SyS-05-GEy" kind="show" id="gEA-rV-yD1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,14 +187,12 @@
                             <constraint firstAttribute="trailing" secondItem="pRA-nq-Gl2" secondAttribute="trailing" id="526-8i-ay9"/>
                             <constraint firstItem="0s1-kk-pEo" firstAttribute="top" secondItem="PCk-C2-MEQ" secondAttribute="bottom" constant="25" id="ATy-Qq-1XZ"/>
                             <constraint firstItem="pRA-nq-Gl2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Djh-X8-Eiw"/>
-                            <constraint firstItem="rpN-1q-s9E" firstAttribute="top" secondItem="0s1-kk-pEo" secondAttribute="bottom" constant="20" id="PQ4-qO-fDU"/>
-                            <constraint firstItem="0s1-kk-pEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="Q0Y-14-7Pf"/>
+                            <constraint firstItem="0s1-kk-pEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="Q0Y-14-7Pf"/>
                             <constraint firstAttribute="trailing" secondItem="qCt-om-zG9" secondAttribute="trailing" constant="15" id="SXV-B2-Rvz"/>
                             <constraint firstItem="ySR-Nc-bT7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V0a-dr-0Jo"/>
-                            <constraint firstItem="PCk-C2-MEQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-55.5" id="e7p-PL-JjX"/>
-                            <constraint firstItem="PCk-C2-MEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTf-4N-UEu"/>
+                            <constraint firstItem="PCk-C2-MEQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-27.5" id="e7p-PL-JjX"/>
+                            <constraint firstItem="PCk-C2-MEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="gTf-4N-UEu"/>
                             <constraint firstItem="ySR-Nc-bT7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pO4-wS-SYA"/>
-                            <constraint firstItem="rpN-1q-s9E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pfh-aH-2vJ"/>
                             <constraint firstAttribute="trailing" secondItem="ySR-Nc-bT7" secondAttribute="trailing" id="qL7-ix-9yg"/>
                             <constraint firstItem="qCt-om-zG9" firstAttribute="top" secondItem="ySR-Nc-bT7" secondAttribute="bottom" constant="15" id="r8C-KP-jUc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pRA-nq-Gl2" secondAttribute="bottom" constant="20" id="wUc-cP-h7m"/>
@@ -170,74 +205,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
-        </scene>
-        <!--Mock Feedback View Controller-->
-        <scene sceneID="OH7-NB-XyU">
-            <objects>
-                <viewController id="g5e-bC-Lr5" customClass="MockFeedbackViewController" customModule="HapticFeedbackDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a3R-xz-0hX"/>
-                        <viewControllerLayoutGuide type="bottom" id="lJf-Zl-T1o"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nU8-07-NSi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXg-TQ-E2b">
-                                <rect key="frame" x="170.5" y="368.5" width="34" height="30"/>
-                                <state key="normal" title="Error"/>
-                                <connections>
-                                    <action selector="errorButton:" destination="g5e-bC-Lr5" eventType="touchUpInside" id="cbN-lq-wM2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-kI-YdU">
-                                <rect key="frame" x="159.5" y="318.5" width="57" height="30"/>
-                                <state key="normal" title="Warning"/>
-                                <connections>
-                                    <action selector="warningButton:" destination="g5e-bC-Lr5" eventType="touchUpInside" id="a9A-gq-MDe"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ti-G4-Iew">
-                                <rect key="frame" x="15" y="126" width="345" height="39.5"/>
-                                <string key="text">This is a demonstration of custom haptic feedback. In this case we are able to mock iPhone 7 and iOS 10 exclusive feedback styles.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 7 Feedback Styles for 6s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZT-Uy-4HX">
-                                <rect key="frame" x="19.5" y="84" width="336" height="27"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="682-fm-fuq">
-                                <rect key="frame" x="158" y="268.5" width="58" height="30"/>
-                                <state key="normal" title="Success"/>
-                                <connections>
-                                    <action selector="successButton:" destination="g5e-bC-Lr5" eventType="touchUpInside" id="l8Z-PZ-Y4Y"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92692041400000003" green="0.94032096860000003" blue="0.94645720720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="2Ti-G4-Iew" firstAttribute="top" secondItem="EZT-Uy-4HX" secondAttribute="bottom" constant="15" id="4Kl-Ec-cw2"/>
-                            <constraint firstItem="HTO-kI-YdU" firstAttribute="centerX" secondItem="nU8-07-NSi" secondAttribute="centerX" id="7jf-UC-71x"/>
-                            <constraint firstItem="EZT-Uy-4HX" firstAttribute="top" secondItem="a3R-xz-0hX" secondAttribute="bottom" constant="20" id="8ZD-d6-gRq"/>
-                            <constraint firstItem="PXg-TQ-E2b" firstAttribute="centerX" secondItem="nU8-07-NSi" secondAttribute="centerX" id="9dO-Qf-BVm"/>
-                            <constraint firstItem="HTO-kI-YdU" firstAttribute="top" secondItem="682-fm-fuq" secondAttribute="bottom" constant="20" id="EIl-I9-Rhg"/>
-                            <constraint firstItem="PXg-TQ-E2b" firstAttribute="top" secondItem="HTO-kI-YdU" secondAttribute="bottom" constant="20" id="JNo-qy-akd"/>
-                            <constraint firstAttribute="trailing" secondItem="2Ti-G4-Iew" secondAttribute="trailing" constant="15" id="Jcz-UM-yEZ"/>
-                            <constraint firstItem="2Ti-G4-Iew" firstAttribute="leading" secondItem="nU8-07-NSi" secondAttribute="leading" constant="15" id="Sch-iF-37j"/>
-                            <constraint firstItem="2Ti-G4-Iew" firstAttribute="centerX" secondItem="nU8-07-NSi" secondAttribute="centerX" id="W7C-bm-oRy"/>
-                            <constraint firstItem="682-fm-fuq" firstAttribute="centerX" secondItem="nU8-07-NSi" secondAttribute="centerX" id="WlC-mc-6VV"/>
-                            <constraint firstItem="EZT-Uy-4HX" firstAttribute="centerX" secondItem="nU8-07-NSi" secondAttribute="centerX" id="eNW-S9-QA8"/>
-                            <constraint firstItem="HTO-kI-YdU" firstAttribute="centerY" secondItem="nU8-07-NSi" secondAttribute="centerY" id="vLK-j9-a9W"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bpb-38-I6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2012" y="467.3163418290855"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HhT-8k-okJ">
@@ -264,28 +231,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ea-WB-ZFE">
-                                <rect key="frame" x="155.5" y="198.5" width="64" height="30"/>
+                                <rect key="frame" x="155.5" y="204.5" width="64" height="30"/>
                                 <state key="normal" title="Selection"/>
                                 <connections>
                                     <action selector="selection:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="pt2-Ya-lK3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTF-3d-xoX">
-                                <rect key="frame" x="160.5" y="278.5" width="55" height="30"/>
+                                <rect key="frame" x="160.5" y="280.5" width="55" height="30"/>
                                 <state key="normal" title="Medium"/>
                                 <connections>
                                     <action selector="medium:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="mej-9h-PgG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPp-gH-AGp">
-                                <rect key="frame" x="170.5" y="238.5" width="35" height="30"/>
+                                <rect key="frame" x="170.5" y="242.5" width="35" height="30"/>
                                 <state key="normal" title="Light"/>
                                 <connections>
                                     <action selector="light:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="H6J-lv-QPE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-pm-9kq">
-                                <rect key="frame" x="158.5" y="358.5" width="58" height="30"/>
+                                <rect key="frame" x="158.5" y="356.5" width="58" height="30"/>
                                 <state key="normal" title="Success"/>
                                 <connections>
                                     <action selector="success:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="T5q-ed-Hmh"/>
@@ -299,14 +266,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3me-fY-kzc">
-                                <rect key="frame" x="159.5" y="398.5" width="57" height="30"/>
+                                <rect key="frame" x="159.5" y="394.5" width="57" height="30"/>
                                 <state key="normal" title="Warning"/>
                                 <connections>
                                     <action selector="warning:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="50N-uN-UbY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snb-d0-gyp">
-                                <rect key="frame" x="170" y="438.5" width="34" height="30"/>
+                                <rect key="frame" x="170" y="432.5" width="34" height="30"/>
                                 <state key="normal" title="Error"/>
                                 <connections>
                                     <action selector="error:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="VVR-8b-pOX"/>
@@ -318,31 +285,57 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-As-Sn3">
+                                <rect key="frame" x="150.5" y="523.5" width="74" height="30"/>
+                                <state key="normal" title="Custom #1"/>
+                                <connections>
+                                    <action selector="crazyButton:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="YOZ-1P-sc5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-0y-9hY">
+                                <rect key="frame" x="149.5" y="563.5" width="76" height="30"/>
+                                <state key="normal" title="Custom #2"/>
+                                <connections>
+                                    <action selector="superCrazyButton:" destination="CrU-Ba-WRj" eventType="touchUpInside" id="J4J-j3-cxw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Haptic Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-nC-dNE">
+                                <rect key="frame" x="111" y="492.5" width="153" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92692041400000003" green="0.94032096860000003" blue="0.94645720720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="o9j-As-Sn3" firstAttribute="top" secondItem="AFL-nC-dNE" secondAttribute="bottom" constant="15" id="6dD-RR-7zi"/>
                             <constraint firstItem="lPp-gH-AGp" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="6eK-m8-32t"/>
                             <constraint firstAttribute="trailing" secondItem="D5h-yj-Dnd" secondAttribute="trailing" id="BLg-BE-Oh6"/>
                             <constraint firstItem="D5h-yj-Dnd" firstAttribute="leading" secondItem="x8d-2M-TQg" secondAttribute="leading" id="CiA-Vv-sjI"/>
-                            <constraint firstItem="dpP-pm-9kq" firstAttribute="top" secondItem="VLJ-mm-zzC" secondAttribute="bottom" constant="10" id="EFq-Vt-aAI"/>
+                            <constraint firstItem="dpP-pm-9kq" firstAttribute="top" secondItem="VLJ-mm-zzC" secondAttribute="bottom" constant="8" id="EFq-Vt-aAI"/>
                             <constraint firstItem="ixU-ED-gjE" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="Gil-AR-Bhb"/>
-                            <constraint firstItem="snb-d0-gyp" firstAttribute="top" secondItem="3me-fY-kzc" secondAttribute="bottom" constant="10" id="IB7-tp-OG7"/>
+                            <constraint firstItem="snb-d0-gyp" firstAttribute="top" secondItem="3me-fY-kzc" secondAttribute="bottom" constant="8" id="IB7-tp-OG7"/>
                             <constraint firstAttribute="trailing" secondItem="ywD-5k-Rrw" secondAttribute="trailing" id="IKl-No-XuY"/>
-                            <constraint firstItem="VLJ-mm-zzC" firstAttribute="top" secondItem="lTF-3d-xoX" secondAttribute="bottom" constant="10" id="Iuw-2J-rqm"/>
+                            <constraint firstItem="VLJ-mm-zzC" firstAttribute="top" secondItem="lTF-3d-xoX" secondAttribute="bottom" constant="8" id="Iuw-2J-rqm"/>
                             <constraint firstItem="D5h-yj-Dnd" firstAttribute="top" secondItem="g4K-sF-50U" secondAttribute="bottom" constant="20" id="S6Z-fO-HEb"/>
                             <constraint firstItem="lTF-3d-xoX" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="Slr-Vm-XIE"/>
-                            <constraint firstItem="lPp-gH-AGp" firstAttribute="top" secondItem="3ea-WB-ZFE" secondAttribute="bottom" constant="10" id="Tmd-tS-5TS"/>
+                            <constraint firstItem="lPp-gH-AGp" firstAttribute="top" secondItem="3ea-WB-ZFE" secondAttribute="bottom" constant="8" id="Tmd-tS-5TS"/>
                             <constraint firstItem="3ea-WB-ZFE" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="TyZ-x3-CG4"/>
-                            <constraint firstItem="VLJ-mm-zzC" firstAttribute="centerY" secondItem="x8d-2M-TQg" secondAttribute="centerY" id="W2d-3a-rZx"/>
                             <constraint firstItem="VLJ-mm-zzC" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="Wbs-oi-Kmf"/>
                             <constraint firstItem="ywD-5k-Rrw" firstAttribute="top" secondItem="D5h-yj-Dnd" secondAttribute="bottom" constant="15" id="XKW-W3-vOY"/>
+                            <constraint firstItem="sUW-0y-9hY" firstAttribute="top" secondItem="o9j-As-Sn3" secondAttribute="bottom" constant="10" id="Xk5-Mq-FBM"/>
                             <constraint firstItem="snb-d0-gyp" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="YWO-bK-uPq"/>
                             <constraint firstItem="dpP-pm-9kq" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="Ys4-Ze-srg"/>
-                            <constraint firstItem="3me-fY-kzc" firstAttribute="top" secondItem="dpP-pm-9kq" secondAttribute="bottom" constant="10" id="e1K-vK-BBN"/>
+                            <constraint firstItem="VLJ-mm-zzC" firstAttribute="centerY" secondItem="x8d-2M-TQg" secondAttribute="centerY" id="dB8-2D-ClC"/>
+                            <constraint firstItem="3me-fY-kzc" firstAttribute="top" secondItem="dpP-pm-9kq" secondAttribute="bottom" constant="8" id="e1K-vK-BBN"/>
+                            <constraint firstItem="AFL-nC-dNE" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="hFK-97-2mF"/>
                             <constraint firstItem="3me-fY-kzc" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="hVz-RN-GI8"/>
                             <constraint firstItem="lf1-jB-jQh" firstAttribute="top" secondItem="ixU-ED-gjE" secondAttribute="bottom" constant="20" id="iBT-7e-kMj"/>
+                            <constraint firstItem="AFL-nC-dNE" firstAttribute="top" secondItem="snb-d0-gyp" secondAttribute="bottom" constant="30" id="mcN-tA-830"/>
                             <constraint firstItem="ywD-5k-Rrw" firstAttribute="leading" secondItem="x8d-2M-TQg" secondAttribute="leading" id="p4q-b4-Jxh"/>
-                            <constraint firstItem="lTF-3d-xoX" firstAttribute="top" secondItem="lPp-gH-AGp" secondAttribute="bottom" constant="10" id="q1J-BP-ylj"/>
+                            <constraint firstItem="lTF-3d-xoX" firstAttribute="top" secondItem="lPp-gH-AGp" secondAttribute="bottom" constant="8" id="q1J-BP-ylj"/>
+                            <constraint firstItem="sUW-0y-9hY" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="rMR-eg-8RS"/>
+                            <constraint firstItem="o9j-As-Sn3" firstAttribute="centerX" secondItem="x8d-2M-TQg" secondAttribute="centerX" id="sPp-lL-3PF"/>
                         </constraints>
                     </view>
                 </viewController>
